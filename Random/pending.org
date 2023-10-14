@@ -1,0 +1,20 @@
+#+title: Pending
+
+#+CAPTION: Resumen
+[[/home/nanaaaaaaa/competitive/Random/problem_ratings.png]]
+
+* Queue of problems [11/12]
+- [X] https://codeforces.com/problemset/problem/1766/C
+- [X] https://codeforces.com/problemset/problem/1774/C
+- [X] https://codeforces.com/problemset/problem/1788/C
+- [X] https://codeforces.com/problemset/problem/1791/E
+
+- [X] https://codeforces.com/problemset/problem/217/A
+- [X] https://codeforces.com/problemset/problem/330/B
+- [X] https://codeforces.com/problemset/problem/500/A
+- [-] https://codeforces.com/problemset/problem/1534/C
+
+- [X] https://codeforces.com/problemset/problem/1766/A
+- [X] https://codeforces.com/problemset/problem/129/B
+- [X] https://codeforces.com/problemset/problem/118/A
+- [X] https://codeforces.com/problemset/problem/90/A

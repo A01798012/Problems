@@ -1,0 +1,30 @@
+5 3 1 2 3
+#include <bits/stdc++.h>
+using namespace std;
+int N, nt;
+vector<int> tracks;
+void subsetsUtil(int index){
+    for (int i = index; i < tracks.size(); i++) {
+      cout << tracks[i] << endl;
+      subsetsUtil(i+1);
+      //subset.pop_back();
+    }
+
+    return;
+}
+
+int main(){
+  cin.tie(0); ios_base::sync_with_stdio(0);
+
+  while(cin >> N){
+    tracks.clear();
+    cin >> nt;
+    tracks.resize(nt);
+    for(int i = 0; i < nt; i++) cin >> tracks[i];
+    subsetsUtil(0);
+
+  }
+
+
+
+}
