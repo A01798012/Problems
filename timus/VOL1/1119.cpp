@@ -1,6 +1,7 @@
-#include <bits/stdc++.h> #include <string>
+#include <bits/stdc++.h>
+#include <cmath>
 #include <unordered_map>
-#include <unordered_set>
+#include <vector>
 #define fst first
 #define snd second
 #define fore(i, a, b) for (int i = a, ThxDem = b; i < ThxDem; ++i)
@@ -10,30 +11,23 @@
 using namespace std;
 typedef long long ll;
 typedef pair<int, int> ii;
+typedef pair<double, double> dd;
 #define MAXN 100000
 #define debug(x) cout << #x << " = " << x << '\n'
-ll N, M, Y; 
-ll pows(ll x, ll n){
-  ll ans = 1;
-  fore(i, 0, n){
-    ans = (ans%M) * (x%M);
-  }
-  return ans;
+float d(dd one, dd other) {
+  return sqrt(pow(other.fst - one.fst, 2) + pow(other.snd - one.snd, 2));
+}
+void djikstra(dd s){
+  
+
 }
 
 int main() {
   cin.tie(0);
   ios_base::sync_with_stdio(0);
-  cin >> N >> M >> Y;
-  ll rand;
-  bool kk = true;
-  fore(X, 0, M){
-    rand = pows(X, N) % M;
-    if(rand == Y){
-      cout << X << ' ';
-      kk = 0;
-    }
-  }
-  if(kk) cout << "-1";
-  cout << '\n';
+  int n, m, k; cin >> n >> m >> k;
+  vector<dd> diag(k);
+  fore(i, 0, k) { cin >> diag[i].fst >> diag[i].snd; }
+
+
 }

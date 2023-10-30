@@ -1,6 +1,4 @@
-#include <bits/stdc++.h> #include <string>
-#include <unordered_map>
-#include <unordered_set>
+#include <bits/stdc++.h>
 #define fst first
 #define snd second
 #define fore(i, a, b) for (int i = a, ThxDem = b; i < ThxDem; ++i)
@@ -12,28 +10,17 @@ typedef long long ll;
 typedef pair<int, int> ii;
 #define MAXN 100000
 #define debug(x) cout << #x << " = " << x << '\n'
-ll N, M, Y; 
-ll pows(ll x, ll n){
-  ll ans = 1;
-  fore(i, 0, n){
-    ans = (ans%M) * (x%M);
-  }
-  return ans;
-}
+vector<int> adj[MAXN];
 
 int main() {
   cin.tie(0);
   ios_base::sync_with_stdio(0);
-  cin >> N >> M >> Y;
-  ll rand;
-  bool kk = true;
-  fore(X, 0, M){
-    rand = pows(X, N) % M;
-    if(rand == Y){
-      cout << X << ' ';
-      kk = 0;
+  int v,n; cin >> n;
+  fore(i, 1, n+1){
+    while(1){
+      cin >> v;
+      if(v == 0) break;
+      adj[i].pb(v);
     }
   }
-  if(kk) cout << "-1";
-  cout << '\n';
 }
