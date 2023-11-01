@@ -13,24 +13,7 @@ typedef pair<int, int> ii;
 
 
 void solve() {
-  ll n, k; cin >> n >> k;
-  ll used = 1; 
-  n--;
-  ll ans = 0;
-  ll canUse;
-  while(used < k && n > 0){
-    canUse = min(used, k);
-    n-=canUse;
-    used+=canUse;
-    ans++;
-  }
-  if(n < 0) n = 0;
-  ans += (n/k); 
-  if(n % k != 0){
-    ans++;
-  }
-  cout << ans << '\n';
-  
+
 }
 
 int main() {
